@@ -13,7 +13,8 @@ makeBlinkyDancer.prototype.step = function() {
   // var oldStep = this.step;
   makeDancer.prototype.step.call(this); //this refers to makeDancer
       //setTimeOut is invoked
-  console.log('this is', this);
-  this.$node.toggle();
+  // console.log('this is', this);
+
+  this.$node.addClass('animated blinky tada infinite');
 
 };

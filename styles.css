@@ -31,14 +31,21 @@ body, a:link, a:visited, a:active{
   width: 400;*/
  /* border:100px solid red;
   border-radius:100px;*/
-  position:absolute;
+  position: absolute;
   /*-webkit-animation-duration: 3s;
   -webkit-animation-delay: 2s;
   -webkit-animation-iteration-count: infinite;*/
 
 }
 
-.flip{
+.blinky {
+width: 320px;
+  height: 231px;
+  background-image: url('fred.png');
+  background-repeat: no-repeat;
+
+}
+.flip {
 /*  border-radius:100px;*/
   
   /*-webkit-animation-duration: 3s;
@@ -47,9 +54,29 @@ body, a:link, a:visited, a:active{
   /*display: block;*/
   width: 320px;
   height: 231px;
-  background-image: url('fred.png');
+  background-image: url('marcus.png');
   background-repeat: no-repeat;
   /*-webkit-animation-duration: 3s;
   -webkit-animation-delay: 2s;
   -webkit-animation-iteration-count: infinite;*/
+}
+
+.bounce {
+/*  border-radius:100px;*/
+  
+  /*-webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;*/
+  /*display: block;*/
+  width: 320px;
+  height: 231px;
+  background-image: url('erik.png');
+  background-repeat: no-repeat;
+  /*-webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;*/
+}
+
+#button {
+  float:right;
 }
