@@ -32,9 +32,10 @@ makeDancer.prototype.step = function() {
   // console.log('thisObj', thisObj);
     // the basic dancer doesn't do anything interesting at all on each step,
     // it just schedules the next step
-  debugger;
+  //debugger;
 
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
+  console.log('this timeBetweenSteps', this.timeBetweenSteps);
   //this.callCount++;
   //debugger;
 
