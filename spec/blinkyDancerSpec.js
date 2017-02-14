@@ -1,7 +1,7 @@
 describe('blinkyDancer', function() {
 
   var blinkyDancer, clock;
-  var timeBetweenSteps = 1000;
+  var timeBetweenSteps = 100;
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
