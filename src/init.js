@@ -25,7 +25,7 @@ $(document).ready(function() {
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
+      Math.min($("body").height() * Math.random(), 640),
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
@@ -76,9 +76,27 @@ $(document).ready(function() {
 
   });
 
-  $('.dancer').on('click', function(event) {
+  $('body').on('mouseenter', '.bouncer', function(event) {
     console.log('clicked');
-    this.$node.addClass('rubberBand');
+    $('.bouncer').removeClass('bounce').addClass('rubberBand');
+  });
+
+  $('body').on('mouseenter', '.flipper', function(event) {
+    console.log('clicked');
+    $('.flipper').removeClass('flip').addClass('rubberBand');
+  });
+
+  $('body').on('mouseenter', '.blinky', function(event) {
+    console.log('clicked');
+    $('.blinky').removeClass('tada').addClass('rubberBand');
+  });
+
+
+  $('body').on('mouseleave', '.dancer', function(event) {
+    console.log('clicked');
+    $('.bouncer').addClass('bounce').removeClass('rubberBand');
+    $('flipper').addClass('flip').removeClass('rubberBand');
+    $('blinky').addClass('tada').removeClass('rubberBand');
   });
 });
 

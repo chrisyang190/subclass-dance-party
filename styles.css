@@ -34,10 +34,16 @@ body, a:link, a:visited, a:active{
  /* border:100px solid red;
   border-radius:100px;*/
   position: absolute;
+
   /*-webkit-animation-duration: 3s;
   -webkit-animation-delay: 2s;
   -webkit-animation-iteration-count: infinite;*/
 
+}
+
+.dancer: hover {
+  -webkit-animation-name: wobble;
+  animation-name: wobble;
 }
 
 .blinky {
@@ -47,7 +53,7 @@ body, a:link, a:visited, a:active{
   background-repeat: no-repeat;
 
 }
-.flip {
+.flipper {
 /*  border-radius:100px;*/
   
   /*-webkit-animation-duration: 3s;
@@ -63,7 +69,7 @@ body, a:link, a:visited, a:active{
   -webkit-animation-iteration-count: infinite;*/
 }
 
-.bounce {
+.bouncer {
 /*  border-radius:100px;*/
   
   /*-webkit-animation-duration: 3s;

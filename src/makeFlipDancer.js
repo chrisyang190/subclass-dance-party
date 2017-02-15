@@ -16,6 +16,6 @@ Marcus.prototype.step = function() {
   // console.log('this is', this);
   //this.$node.addClass('flip');
   // this.$node.removeClass('dancer');
-  this.$node.addClass('animated flip infinite');
+  this.$node.addClass('animated flipper flip infinite');
 
 };

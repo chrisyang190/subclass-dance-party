@@ -16,6 +16,6 @@ Erik.prototype.step = function() {
   // console.log('this is', this);
   //this.$node.addClass('flip');
   // this.$node.removeClass('dancer');
-  this.$node.addClass('animated bounce infinite');
+  this.$node.addClass('animated bouncer bounce infinite');
 
 };
