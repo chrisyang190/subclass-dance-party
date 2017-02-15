@@ -98,5 +98,9 @@ $(document).ready(function() {
     $('flipper').addClass('flip').removeClass('rubberBand');
     $('blinky').addClass('tada').removeClass('rubberBand');
   });
+
+  $('.earthquake').on('click', function(event) {
+    $('.dancer').toggle();
+  });
 });
 
