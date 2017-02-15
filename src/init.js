@@ -42,11 +42,43 @@ $(document).ready(function() {
     //   }
     // };
     for (var i = 0; i < window.dancers.length; i++) {
-      window.dancers[i].setPosition(400, i * 100);
+      window.dancers[i].setPosition(300, i * 100);
     }
 
     // lineUp();
   });
 
+  $('.newCohort').on('click', function(event) {
+
+    for (var i = 0; i < window.dancers.length; i++) {
+      if (window.dancers[i] instanceof Marcus) {
+        var marcusLeft = window.dancers[i].positionLeft;
+        var marcusTop = window.dancers[i].positionTop;
+      }
+
+    }
+    for (var j = 0; j < window.dancers.length; j++) {
+      if (window.dancers[j] instanceof Erik) {
+        window.dancers[j].setPosition(marcusTop + 50, marcusLeft);
+      }
+    }
+
+    for (var k = 0; k < window.dancers.length; k++) {
+      if (window.dancers[k] instanceof Fred) {
+        window.dancers[k].setPosition(marcusTop - 50, marcusLeft);
+      }
+    }
+    for (var q = 0; q < window.dancers.length; q++) {
+      if (window.dancers[q] instanceof Marcus) {
+        window.dancers[q].setPosition(marcusTop - 50, marcusLeft);
+      }
+    }
+
+  });
+
+  $('.dancer').on('click', function(event) {
+    console.log('clicked');
+    this.$node.addClass('rubberBand');
+  });
 });
 

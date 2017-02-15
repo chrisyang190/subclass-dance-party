@@ -1,4 +1,4 @@
-var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
+var Fred = function(top, left, timeBetweenSteps) {
   //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
   makeDancer.call(this, top, left, timeBetweenSteps); // this allows BlinkyDancer to obtain all Dancer properties
   
@@ -6,9 +6,9 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   // debugger;
   //this.$node = $('<span class="dancer"></span>');
 };
-makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
-makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
-makeBlinkyDancer.prototype.step = function() {
+Fred.prototype = Object.create(makeDancer.prototype);
+Fred.prototype.constructor = Fred;
+Fred.prototype.step = function() {
     // call the old version of step at the beginning of any call to this new version of step
   // var oldStep = this.step;
   makeDancer.prototype.step.call(this); //this refers to makeDancer
